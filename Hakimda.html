@@ -1,45 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kişisel Web Sitem</title>
-    <style>
-        /* CSS stil tanımlamalarını burada ekleyebilirsiniz */
-    </style>
+    <title>kişisel wep sitesi</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Adınız Soyadınız</h1>
-        <p>Web Geliştirici</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="Home.html">Projeler</a></li>
-            <li><a href="#hakkimda">Hakkımda</a></li>
-            <li><a href="#projeler">Projeler</a></li>
-            <li><a href="#iletisim">İletişim</a></li>
-        </ul>
-    </nav>
-
-    <section id="hakkimda">
-        <h2>Hakkımda</h2>
-        <p>Buraya hakkınızda kısa bir açıklama ekleyebilirsiniz.</p>
-    </section>
-
-    <section id="projeler">
-        <h2>Projeler</h2>
-        <p>Burada projelerinizi ve çalışmalarınızı tanıtabilirsiniz.</p>
-    </section>
-
-    <section id="iletisim">
-        <h2>İletişim</h2>
-        <p>İletişim bilgilerinizi burada paylaşabilirsiniz.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Kişisel Web Siteniz</p>
-    </footer>
+    <div class="center">
+        <div class="avatar">
+            <img src="profil/IMG-20210629-WA0170.jpg" >
+        </div>
+        <div class="content">
+            <h1>Bayram Can Taşkın</h1>
+            <h2>Bilgisayar Programcısı</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Nobis harum, obcaecati earum tempore ipsum,
+                  ab, maxime explicabo exercitationem ipsa esse 
+                  deserunt eveniet optio. Repudiandae incidunt, 
+                  illo sit assumenda natus soluta?</p>
+            <h3>Sosyal Medya Hesaplarım</h3>
+        </div>
+        <div class="sosyal">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-github"></i></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
 </body>
-</html>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        color: #000000;
+        font-family: sans-serif;
+        background-image: url(arkaplan/100-most-beautiful-background-picture-14-oY2wQsrzD.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center .avatar img {
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        margin-top: 5%;
+    }
+
+    .center {
+        width: 642px;
+        background-color: rgba(0,0,0,0.0.0.1);
+        height: 482px;
+        text-align: center;
+        border-radius: 25px;
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+    h1 {
+        color: #000000;
+    }
+
+    .content h2,
+    p {
+        font-weight: lighter;
+        letter-spacing: 1px;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .content h2 {
+        margin-top: 20px;
+    }
+
+    div.sosyal i {
+        padding: 0 10px;
+        font-size: 50px;
+        color: #000000;
+        transition: 0.4s;
+    }
+
+        div.sosyal i:hover {
+            color: #00CC00;
+        }
+
+    @media screen and (max-width: 700px) {
+        .center {
+            width: 300px;
+            height: 500px;
+        }
+
+        h1 {
+            font-size: 22px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        p {
+            width: 90%;
+            font-size: 12px;
+        }
+
+        h3 {
+            font-size: 14px;
+        }
+
+        .sosyal a i {
+            font-size: 35px;
+        }
+    }
+    </style>
+     </html >
